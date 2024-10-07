@@ -64,4 +64,7 @@ Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para ma
 📞 Suporte
 Para suporte, abra uma issue neste repositório ou entre em contato diretamente.
 
+Contribuição pague um café para o desenvolvedor [Café :D](https://www.asaas.com/c/1zxb3jhk1ixipa00) 
+
+
 
