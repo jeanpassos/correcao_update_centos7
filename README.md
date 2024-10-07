@@ -23,6 +23,20 @@ git clone https://github.com/jeanpassos/correcao_update_centos7.git
 ```
 cd correcao_update_centos7
 
+```bash
+cd correcao_update_centos7
+```
+```bash
+ bash correcao_update_centos7
+```
+
+Caso precise somente executar 
+
+```bash
+curl -s https://raw.githubusercontent.com/jeanpassos/correcao_update_centos7/main/app.sh | bash
+```
+
+
 📄 Uso
 O script realiza as seguintes ações:
 
