@@ -20,7 +20,8 @@ Primeiro, clone este repositório para a sua máquina local:
 
 ```bash
 git clone https://github.com/jeanpassos/correcao_update_centos7.git
-cd update-centos7
+```
+cd correcao_update_centos7
 
 📄 Uso
 O script realiza as seguintes ações:
