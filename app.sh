@@ -5,10 +5,10 @@
 # Nome do script: update_centos7.sh
 
 # Verificar se o script está sendo executado como root
-#if [[ "$EUID" -ne 0 ]]; then
-#  echo "Por favor, execute como root ou use sudo."
-#  exit 1
-#fi
+if [[ "$EUID" -ne 0 ]]; then
+  echo "Por favor, execute como root ou use sudo."
+  exit 1
+fi
 
 # Fazer backup do arquivo original do repositório
 cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
