@@ -1,36 +1,46 @@
 # correcao_update_centos7
 
 
-sudo nano /etc/yum.repos.d/CentOS-Base.repo
+Este projeto fornece um script Correção e automatiza a atualizar sistemas CentOS 7 utilizando SSH. O script configura os repositórios do CentOS para uma versão específica, limpa o cache do YUM e executa a atualização do sistema.
+
+## 📦 Estrutura do Projeto
 
 
-[base]
-name=CentOS-7 - Base
-#mirrorlist=http://mirrorlist.centos.org/?release=7&arch=$basearch&repo=os
-baseurl=http://vault.centos.org/7.9.2009/os/$basearch/
-gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+## ⚙️ Pré-requisitos
 
-[updates]
-name=CentOS-7 - Updates
-#mirrorlist=http://mirrorlist.centos.org/?release=7&arch=$basearch&repo=updates
-baseurl=http://vault.centos.org/7.9.2009/updates/$basearch/
-gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+- **Sistema Operacional:** CentOS 7
+- **Acesso SSH:** Acesso root ou privilégios de sudo no servidor remoto
+- **Ferramentas:** `git`, `ssh`, `scp` instalados na máquina local
 
-[extras]
-name=CentOS-7 - Extras
-#mirrorlist=http://mirrorlist.centos.org/?release=7&arch=$basearch&repo=extras
-baseurl=http://vault.centos.org/7.9.2009/extras/$basearch/
-gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+## 🚀 Instalação
 
+### 1. Clonar o Repositório
 
+Primeiro, clone este repositório para a sua máquina local:
 
+```bash
+git clone https://github.com/jeanpassos/correcao_update_centos7.git
+cd update-centos7
 
-sudo yum clean all
+📄 Uso
+O script realiza as seguintes ações:
 
+Verificação de Permissões: Garante que o script esteja sendo executado com privilégios de root.
+Backup do Repositório Atual: Cria uma cópia de segurança do arquivo CentOS-Base.repo.
+Atualização dos Repositórios: Substitui o conteúdo do arquivo CentOS-Base.repo para apontar para os repositórios do vault.centos.org.
+Limpeza do Cache do YUM: Executa yum clean all para limpar o cache.
+Atualização do Sistema: Executa yum update -y para atualizar todos os pacotes instalados.
 
-sudo yum update
+🛠️ Personalização
+Caso precise modificar os repositórios ou adicionar novos, edite o script update_centos7.sh conforme necessário.
+
+📝 Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+
+📄 Licença
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+📞 Suporte
+Para suporte, abra uma issue neste repositório ou entre em contato diretamente.
 
 
