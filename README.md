@@ -5,11 +5,12 @@ Este projeto fornece um script Correção e automatiza a atualizar sistemas Cent
 
 ## 📦 Estrutura do Projeto
 
+
 correcao_update_centos7/
-├── app.sh
-├── README.md
-├── .gitignore
-└── LICENSE
+#├── app.sh
+#├── README.md
+#├── .gitignore
+#└── LICENSE
 
 
 ## ⚙️ Pré-requisitos
