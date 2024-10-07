@@ -1,9 +1,15 @@
-# correcao_update_centos7
+# Correção da Atualização do Centos 7
 
 
 Este projeto fornece um script Correção e automatiza a atualizar sistemas CentOS 7 utilizando SSH. O script configura os repositórios do CentOS para uma versão específica, limpa o cache do YUM e executa a atualização do sistema.
 
 ## 📦 Estrutura do Projeto
+
+correcao_update_centos7/
+├── app.sh
+├── README.md
+├── .gitignore
+└── LICENSE
 
 
 ## ⚙️ Pré-requisitos
@@ -30,10 +36,10 @@ cd correcao_update_centos7
  bash correcao_update_centos7
 ```
 
-Caso precise somente executar 
+Caso precise somente executar:
 
 ```bash
-curl -s https://raw.githubusercontent.com/jeanpassos/correcao_update_centos7/main/app.sh | bash
+curl -sSL https://raw.githubusercontent.com/jeanpassos/correcao_update_centos7/main/app.sh | sudo bash
 ```
 
 
