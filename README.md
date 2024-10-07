@@ -49,11 +49,11 @@ curl -sSL https://raw.githubusercontent.com/jeanpassos/correcao_update_centos7/m
 📄 Uso
 O script realiza as seguintes ações:
 
-Verificação de Permissões: Garante que o script esteja sendo executado com privilégios de root.
-Backup do Repositório Atual: Cria uma cópia de segurança do arquivo CentOS-Base.repo.
-Atualização dos Repositórios: Substitui o conteúdo do arquivo CentOS-Base.repo para apontar para os repositórios do vault.centos.org.
-Limpeza do Cache do YUM: Executa yum clean all para limpar o cache.
-Atualização do Sistema: Executa yum update -y para atualizar todos os pacotes instalados.
+- Verificação de Permissões: Garante que o script esteja sendo executado com privilégios de root.
+- Backup do Repositório Atual: Cria uma cópia de segurança do arquivo CentOS-Base.repo.
+- Atualização dos Repositórios: Substitui o conteúdo do arquivo CentOS-Base.repo para apontar para os repositórios do vault.centos.org.
+- Limpeza do Cache do YUM: Executa yum clean all para limpar o cache.
+- Atualização do Sistema: Executa yum update -y para atualizar todos os pacotes instalados.
 
 🛠️ Personalização
 Caso precise modificar os repositórios ou adicionar novos, edite o script update_centos7.sh conforme necessário.
